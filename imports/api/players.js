@@ -16,4 +16,4 @@ const PlayerSchema = new SimpleSchema({
   notes: { type: String, optional: true},
 })
 
-Players.attatchSchema(PlayerSchema);
+Players.attachSchema(PlayerSchema);
