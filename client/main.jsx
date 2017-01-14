@@ -5,8 +5,8 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import { Router, Route, browserHistory } from 'react-router';
 
 import App from '../imports/ui/App.jsx';
-import New from '../imports/ui/New.jsx'
-import Lost from '../imports/ui/Lost.jsx'
+import New from '../imports/ui/New';
+import Lost from '../imports/ui/Lost';
 
 injectTapEventPlugin();
 

@@ -22,9 +22,10 @@ export default class Example extends Component {
     });
 
     console.log("Success player submitted!");
-
+    
     browserHistory.push('/');
   }
+
   render() {
     return (
       <div className="row">
@@ -33,10 +34,10 @@ export default class Example extends Component {
 
           <div className="row">
             <div className="input-field col s6">
-              <input placeholder="Name" ref="name" type="text" className="validate" />
+              <input placeholder="Name" ref="name" type="text" className="validate"/>
             </div>
             <div className="input-field col s6">
-              <input placeholder="Team" ref="team" type="text" className="validate" />
+              <input placeholder="Team" ref="team" type="text" className="validate"/>
             </div>
           </div>
 
@@ -72,7 +73,7 @@ export default class Example extends Component {
               </select>
             </div>
             <div className="input-field col s6">
-              <h5>Duel Tracking</h5>
+              <h5>Duel - Tackling</h5>
               <select className="browser-default" ref="duelTackling">
                 <option value="0">0 - Hasn't demonstrated skills</option>
                 <option value="1">1 - Needs improvement</option>
@@ -84,7 +85,7 @@ export default class Example extends Component {
 
           <div className="row">
             <div className="input-field col s6">
-              <h5>Field Coverage</h5>
+              <h5>Field Coverage - speed</h5>
               <select className="browser-default" ref="fieldCoverage">
                 <option value="0">0 - Hasn't demonstrated skills</option>
                 <option value="1">1 - Needs improvement</option>
@@ -126,7 +127,7 @@ export default class Example extends Component {
 
           <div className="row">
             <div className="input-field col s6">
-              <textarea placeholder="Notes" ref = "notes" className="materialize-textarea" />
+              <textarea placeholder="Notes" ref="notes" className="materialize-textarea"/>
             </div>
             <div className="input-field col s6">
               <button className="btn waves-effect waves-light" type="submit" name="action">Submit
