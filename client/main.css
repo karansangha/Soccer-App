@@ -1,1 +1,31 @@
 /* CSS declarations go here */
+#login-buttons > div {
+  padding-top: 12px;
+  color: white;
+}
+
+#login-buttons .login-button, .account-dialog .login-button {
+  line-height: 36px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  height: 36px;
+  padding: 0 2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all .3s ease-out;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: black;
+  border: none;
+  border-radius: 2px;
+  outline: 0;
+  background-color: #8fcaf9;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  -webkit-tap-highlight-color: transparent;
+  will-change: opacity, transform;
+}

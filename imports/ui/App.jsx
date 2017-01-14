@@ -63,8 +63,9 @@ App.propTypes = {
 
 export default createContainer(() => {
   Meteor.subscribe('players');
+  const user = Meteor.userId();
 
   return {
-    players: Players.find({}, {sort: { name: 1}}).fetch(),
+    players: Players.find({ owner: user }, {sort: { name: 1}}).fetch(),
   };
 }, App);
