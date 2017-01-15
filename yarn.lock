@@ -714,6 +714,10 @@ keycode@^2.1.1:
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/keycode/-/keycode-2.1.7.tgz#7b9255919f6cff562b09a064d222dca70b020f5c"
 
+lodash.isequal@^4.4.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+
 lodash.merge@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
@@ -996,6 +1000,12 @@ react-addons-pure-render-mixin@^15.3.2:
 react-addons-transition-group@^15.0.0:
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react-addons-transition-group/-/react-addons-transition-group-15.3.2.tgz#64f758d18bd1e59128726b1c9a4db79127c4f1ed"
+
+react-chartjs-2@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-chartjs-2/-/react-chartjs-2-2.0.0.tgz#cf6aed0d8bad2e46497697eac46d8df9b4769b8a"
+  dependencies:
+    lodash.isequal "^4.4.0"
 
 react-dom@^15.4.2:
   version "15.4.2"
