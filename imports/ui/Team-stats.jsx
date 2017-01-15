@@ -65,7 +65,7 @@ export default class TeamStats extends Component {
 
     return (
       <div>
-        <h2>Team Stats</h2>
+        <h3>Team Stats</h3>
         <div className="row">
           <div className="col s12 m7">
             <Radar data={data}
@@ -78,11 +78,11 @@ export default class TeamStats extends Component {
           <div className="col s12 m5">
             <h4>Scores in % of max possible</h4>
             <Divider />
-            <h4>Team's offense: {offense}%</h4>
-            <h4>Team's defense: {defense}%</h4>
-            <h4>Team's total: {total}%</h4>
+            <h5>Team's offense: {offense}%</h5>
+            <h5>Team's defense: {defense}%</h5>
+            <h5>Team's total: {total}%</h5>
             <Divider />
-            <h4>Number of players: {numPlayers}</h4>
+            <h5>Number of players: {numPlayers}</h5>
           </div>
         </div>
       </div>

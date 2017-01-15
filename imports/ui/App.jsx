@@ -91,7 +91,7 @@ export default class App extends Component {
           <div className="row">
             <div className="col s12 m7" ><Player player={this.state.currentPlayer} showEditForm={this.showEditForm}/></div>
             <div className="col s12 m5" >
-              <h2>Team list</h2><Link to="/new" className="waves-effect waves-light btn light-blue darken-3">Add player</Link>
+              <h3>Team list</h3><Link to="/new" className="waves-effect waves-light btn light-blue darken-3">Add player</Link>
               <Divider/>
                 <List>
                   {this.renderPlayers()}
