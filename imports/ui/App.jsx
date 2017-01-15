@@ -17,17 +17,17 @@ import AccountsWrapper from './AccountsWrapper';
 import Edit from './EditPlayer';
 
 const tempPlayer = {
-  name: "Temp player",
+  name: "Temporary player",
   team: "Lynda",
-  ballManipulation: 3,
-  kickingAbilities: 3,
-  passingAbilities: 2,
-  duelTackling: 2,
-  fieldCoverage: 1,
-  blockingAbilities: 3,
-  gameStrategy: 1,
-  playmakingRisks: 2,
-  notes: "This player is only temporary.",
+  ballManipulation: 0,
+  kickingAbilities: 0,
+  passingAbilities: 0,
+  duelTackling: 0,
+  fieldCoverage: 0,
+  blockingAbilities: 0,
+  gameStrategy: 0,
+  playmakingRisks: 0,
+  notes: "This player is temporary.",
 }
 
 export default class App extends Component {
@@ -84,13 +84,14 @@ export default class App extends Component {
           <AppBar
             title="Soccer Application"
             iconClassNameRight="muidocs-icon-navigation-expand-more"
-            showMenuIconButton={false}>
+            showMenuIconButton={false}
+            style={{backgroundColor: '#0277BD'}}>
             <AccountsWrapper />
           </AppBar>
           <div className="row">
             <div className="col s12 m7" ><Player player={this.state.currentPlayer} showEditForm={this.showEditForm}/></div>
             <div className="col s12 m5" >
-              <h2>Team list</h2><Link to="/new" className="waves-effect waves-light btn">Add player</Link>
+              <h2>Team list</h2><Link to="/new" className="waves-effect waves-light btn light-blue darken-3">Add player</Link>
               <Divider/>
                 <List>
                   {this.renderPlayers()}
