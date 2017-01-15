@@ -9,5 +9,9 @@ Meteor.methods({
   updatePlayer(player) {
     Players.update(player._id,
     { $set: player});
+  },
+
+  deletePlayer(playerId) {
+    Players.remove(playerId);
   }
 });
