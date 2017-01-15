@@ -44,7 +44,7 @@ export default class TeamStats extends Component {
 
     const defense = Math.round((duelTackling + fieldCoverage + blockingAbilities + gameStrategy + playmakingRisks)/5);
     const offense = Math.round((kickingAbilities + ballManipulation + passingAbilities + fieldCoverage + gameStrategy + playmakingRisks)/6)
-    const total = defense + offense;
+    const total = Math.round((kickingAbilities + ballManipulation + passingAbilities + fieldCoverage + gameStrategy + playmakingRisks + duelTackling + blockingAbilities)/8);
 
     const data = {
       labels: ['Ball Manipulation', 'Kicking', 'Passing', 'Duel/Tackling', 'Field Coverage', 'Blocking', 'Strategy','Risks'],
